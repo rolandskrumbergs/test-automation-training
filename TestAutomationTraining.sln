@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30907.101
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestAutomationTraining", "TestAutomationTraining\TestAutomationTraining.csproj", "{6BE940C8-AB6B-4715-917F-C8EBF2781501}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAutomationTraining.SpecFlow", "TestAutomationTraining.SpecFlow\TestAutomationTraining.SpecFlow.csproj", "{7B054C50-9ADC-4745-A203-5E9AF187CBE9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6BE940C8-AB6B-4715-917F-C8EBF2781501}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BE940C8-AB6B-4715-917F-C8EBF2781501}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BE940C8-AB6B-4715-917F-C8EBF2781501}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BE940C8-AB6B-4715-917F-C8EBF2781501}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7B054C50-9ADC-4745-A203-5E9AF187CBE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7B054C50-9ADC-4745-A203-5E9AF187CBE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7B054C50-9ADC-4745-A203-5E9AF187CBE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7B054C50-9ADC-4745-A203-5E9AF187CBE9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {362A7EB6-77EC-47AB-9FA2-5B6735BFC5BE}
+	EndGlobalSection
+EndGlobal
