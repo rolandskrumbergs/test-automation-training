@@ -8,7 +8,7 @@ namespace TestAutomationTraining.SpecFlow.Page
     public class CheckBox
     {
         private readonly ISearchContext _driver;
-        private readonly By _checkBoxElement = By.CssSelector("");
+        private readonly By _checkBoxElement = By.CssSelector("input");
         public CheckBox(ISearchContext driver)
         {
             _driver = driver;

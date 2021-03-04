@@ -1,7 +1,4 @@
 ﻿using OpenQA.Selenium;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TestAutomationTraining.SpecFlow.Page
 {
@@ -9,22 +6,22 @@ namespace TestAutomationTraining.SpecFlow.Page
     {
         private readonly IWebDriver _driver;
 
-        private readonly By _createNewButton = By.Id("create-new");
-        private readonly By _bookCountLocator = By.Id("book-count");
-        private readonly By _dvdCountLocator = By.Id("dvd-count");
-        private readonly By _shirtCountLocator = By.Id("shirt-count");
-        private readonly By _clientAddressLocator = By.Id("client-address");
-        private readonly By _clientPhoneLocator = By.Id("client-phone");
-        private readonly By _clientEmailLocator = By.Id("client-email"); 
-        private readonly By _isCompanyLocator = By.Id("is-company");
-        private readonly By _companyAddressLocator = By.Id("company-address");
-        private readonly By _companyRegNrLocator = By.Id("company-reg-nr");
-        private readonly By _companyPvnRegNrLocator = By.Id("company-pvn-reg-nr");
-        private readonly By _deliveryAddresssLocator = By.Id("delivery-address");
-        private readonly By _deliveryDetailsLocator = By.Id("delivery-details");
-        private readonly By _deliveryDateLocator = By.Id("delivary-date");
-        private readonly By _paymentTypeLocator = By.Id("payment-type");
-        private readonly By _createButtonLocator = By.Id("create-button");
+        private readonly By _createNewButton = By.Id("");
+        private readonly By _bookCountLocator = By.Id("");
+        private readonly By _dvdCountLocator = By.Id("");
+        private readonly By _shirtCountLocator = By.Id("");
+        private readonly By _clientAddressLocator = By.Id("");
+        private readonly By _clientPhoneLocator = By.Id("");
+        private readonly By _clientEmailLocator = By.Id(""); 
+        private readonly By _isCompanyLocator = By.Id("");
+        private readonly By _companyAddressLocator = By.Id("");
+        private readonly By _companyRegNrLocator = By.Id("");
+        private readonly By _companyPvnRegNrLocator = By.Id("");
+        private readonly By _deliveryAddresssLocator = By.Id("");
+        private readonly By _deliveryDetailsLocator = By.Id("");
+        private readonly By _deliveryDateLocator = By.Id("");
+        private readonly By _paymentTypeLocator = By.Id("");
+        private readonly By _createButtonLocator = By.Id("");
 
 
         public OrderPage(IWebDriver driver)
