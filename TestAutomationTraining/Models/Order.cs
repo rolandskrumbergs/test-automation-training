@@ -24,7 +24,7 @@ namespace TestAutomationTraining.Models
         public int AmountOfShirts { get; set; }
 
         [Required]
-        [Display(Prompt = "Ievadi klienta vārdu, uzvārdu", Name = "Klienta adrese")]
+        [Display(Prompt = "Ievadi klienta vārdu, uzvārdu", Name = "Klienta vārds")]
         [MaxLength(50)]
         [MinLength(5)]
         public string CustomerName { get; set; }

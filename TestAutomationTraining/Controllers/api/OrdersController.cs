@@ -1,5 +1,7 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -77,13 +79,20 @@ namespace TestAutomationTraining.Controllers.api
         [HttpPost]
         public async Task<ActionResult<Order>> PostOrder(Order order)
         {
-            var errors = OrderValidator.GetValidationErrors(order);
-
-            if (errors.Count > 0)
+            try
             {
-                return BadRequest(errors);
-            }
+                var errors = OrderValidator.GetValidationErrors(order);
 
+                if (errors.Count > 0)
+                {
+                    return BadRequest(errors);
+                }
+            }
+            catch(Exception ex)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, new { Error = ex.Message });
+            }
+            
             _context.Orders.Add(order);
             await _context.SaveChangesAsync();
 

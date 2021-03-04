@@ -134,6 +134,11 @@ namespace TestAutomationTraining.Business
                 }
             }
 
+            if (order.PaymentType == PaymentType.Unknown)
+            {
+                throw new Exception("Unknown error");
+            }
+
             return resultList;
         }
     }
